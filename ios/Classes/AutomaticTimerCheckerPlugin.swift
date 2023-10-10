@@ -9,7 +9,7 @@ public class AutomaticTimerCheckerPlugin: NSObject, FlutterPlugin {
   }
 
    public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-        if call.method == "isAutomaticTimeEnabled" {
+        if (call.method == "isAutomaticTimeEnabled") {
             let isAutomaticTimeEnabled = checkAutomaticTimeEnabled()
             result(isAutomaticTimeEnabled)
         } else if(call.method == "getPlatformVersion"){
