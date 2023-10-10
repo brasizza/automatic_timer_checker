@@ -12,15 +12,13 @@ public class AutomaticTimerCheckerPlugin: NSObject, FlutterPlugin {
         if call.method == "isAutomaticTimeEnabled" {
             let isAutomaticTimeEnabled = checkAutomaticTimeEnabled()
             result(isAutomaticTimeEnabled)
-        } 
-        
-        if(call.method == "getPlatformVersion"){
-      result("iOS " + UIDevice.current.systemVersion)
-            
+        } else if(call.method == "getPlatformVersion"){
+          result("iOS " + UIDevice.current.systemVersion)
         }
         else {
             result(FlutterMethodNotImplemented)
         }
+
     }
 
     private func checkAutomaticTimeEnabled() -> Bool {
