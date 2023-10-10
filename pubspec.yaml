@@ -1,10 +1,10 @@
 name: automatic_timer_checker
 description: A new Flutter plugin project.
 version: 0.0.1
-homepage:
+homepage: ""
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
+  sdk: '>=2.16.0 <4.0.0'
   flutter: '>=3.3.0'
 
 dependencies:
